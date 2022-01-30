@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class M_admin extends CI_Model {
 	public function update($data, $id) {
 		$this->db->where("id", $id);
-		$this->db->update("admin", $data);
+		$this->db->update("tbluserlogin", $data);
 
 		return $this->db->affected_rows();
 	}
@@ -14,7 +14,7 @@ class M_admin extends CI_Model {
 			$this->db->where('id', $id);
 		}
 
-		$data = $this->db->get('admin');
+		$data = $this->db->get('tbluserlogin');
 
 		return $data->row();
 	}

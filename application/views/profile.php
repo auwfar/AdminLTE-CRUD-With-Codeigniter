@@ -3,15 +3,22 @@
     <!-- Profile Image -->
     <div class="box box-primary">
       <div class="box-body box-profile">
-        <img class="profile-user-img img-responsive img-circle" src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->foto; ?>" alt="User profile picture">
+        <img class="profile-user-img img-responsive img-circle" src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->field_photo; ?>" alt="User profile picture">
 
-        <h3 class="profile-username text-center"><?php echo $userdata->nama; ?></h3>
+        <h3 class="profile-username text-center"><?php echo $userdata->field_nama; ?></h3>
 
-        <p class="text-muted text-center">Web Developer</p>
+        <p class="text-muted text-center"><?php echo $userdata->field_blokir_status;?></p>
 
         <ul class="list-group list-group-unbordered">
           <li class="list-group-item">
-            <b>Username</b> <a class="pull-right"><?php echo $userdata->username; ?></a>
+            <b>Username</b> <a class="pull-right"><?php echo $userdata->field_handphone; ?></a>
+          </li>
+          <li class="list-group-item">
+            <b>Email</b> <a class="pull-right"><?php echo $userdata->field_email;
+            // var_dump($userdata);
+            
+            ?></a>
+            
           </li>
         </ul>
       </div>
@@ -23,6 +30,7 @@
       <ul class="nav nav-tabs">
         <li class="active"><a href="#settings" data-toggle="tab">Settings</a></li>
         <li><a href="#password" data-toggle="tab">Ubah Password</a></li>
+        <li><a href="#personal" data-toggle="tab">Personal</a></li>
       </ul>
       <div class="tab-content">
         <div class="active tab-pane" id="settings">
@@ -30,13 +38,13 @@
             <div class="form-group">
               <label for="inputUsername" class="col-sm-2 control-label">Username</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id= placeholder="Username" name="username" value="<?php echo $userdata->username; ?>">
+                <input type="text" class="form-control" id="" placeholder="Username" name="field_username" value="<?php echo $userdata->field_email; ?>">
               </div>
             </div>
             <div class="form-group">
               <label for="inputNama" class="col-sm-2 control-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" placeholder="Name" name="nama" value="<?php echo $userdata->nama; ?>">
+                <input type="text" class="form-control" placeholder="Name" name="nama" value="<?php echo $userdata->field_nama; ?>">
               </div>
             </div>
             <div class="form-group">
@@ -55,6 +63,34 @@
         </div>
         <div class="tab-pane" id="password">
           <form class="form-horizontal" action="<?php echo base_url('Profile/ubah_password') ?>" method="POST">
+            <div class="form-group">
+              <label for="passLama" class="col-sm-2 control-label">Password Lama</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="Password Lama" name="passLama">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="passBaru" class="col-sm-2 control-label">Password Baru</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="Password Baru" name="passBaru">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="passKonf" class="col-sm-2 control-label">Konfirmasi Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="Konfirmasi Password" name="passKonf">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane" id="personal">
+          <form class="form-horizontal" action="<?php echo base_url('Profile/personal') ?>" method="POST">
             <div class="form-group">
               <label for="passLama" class="col-sm-2 control-label">Password Lama</label>
               <div class="col-sm-10">

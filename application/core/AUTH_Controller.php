@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class AUTH_Controller extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('M_admin');
+		$this->load->model('M_users');
 
 		$this->userdata = $this->session->userdata('userdata');
 		
@@ -17,7 +17,7 @@ class AUTH_Controller extends CI_Controller {
 
 	public function updateProfil() {
 		if ($this->userdata != '') {
-			$data = $this->M_admin->select($this->userdata->id);
+			$data = $this->M_users->select($this->userdata->field_user_id);
 
 			$this->session->set_userdata('userdata', $data);
 			$this->userdata = $this->session->userdata('userdata');

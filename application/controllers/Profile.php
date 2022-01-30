@@ -4,9 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Profile extends AUTH_Controller {
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('M_admin');
+		$this->load->model('M_users');
 	}
-
 	public function index() {
 		$data['userdata'] 		= $this->userdata;
 		
@@ -17,10 +16,10 @@ class Profile extends AUTH_Controller {
 	}
 
 	public function update() {
-		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]|max_length[15]');
+		$this->form_validation->set_rules('field_username', 'Username', 'trim|required|min_length[4]|max_length[15]');
 		$this->form_validation->set_rules('nama', 'Nama', 'trim|required');
 
-		$id = $this->userdata->id;
+		$id = $this->userdata->idd;
 		$data = $this->input->post();
 		if ($this->form_validation->run() == TRUE) {
 			$config['upload_path'] = './assets/img/';
@@ -36,7 +35,7 @@ class Profile extends AUTH_Controller {
 				$data['foto'] = $data_foto['file_name'];
 			}
 
-			$result = $this->M_admin->update($data, $id);
+			$result = $this->M_users->update($data, $id);
 			if ($result > 0) {
 				$this->updateProfil();
 				$this->session->set_flashdata('msg', show_succ_msg('Data Profile Berhasil diubah'));
@@ -56,7 +55,7 @@ class Profile extends AUTH_Controller {
 		$this->form_validation->set_rules('passBaru', 'Password Baru', 'trim|required');
 		$this->form_validation->set_rules('passKonf', 'Password Konfirmasi', 'trim|required');
 
-		$id = $this->userdata->id;
+		$id = $this->userdata->idd;
 		if ($this->form_validation->run() == TRUE) {
 			if (md5($this->input->post('passLama')) == $this->userdata->password) {
 				if ($this->input->post('passBaru') != $this->input->post('passKonf')) {
@@ -67,7 +66,7 @@ class Profile extends AUTH_Controller {
 						'password' => md5($this->input->post('passBaru'))
 					];
 
-					$result = $this->M_admin->update($data, $id);
+					$result = $this->M_users->update($data, $id);
 					if ($result > 0) {
 						$this->updateProfil();
 						$this->session->set_flashdata('msg', show_succ_msg('Password Berhasil diubah'));

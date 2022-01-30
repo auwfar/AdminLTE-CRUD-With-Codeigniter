@@ -1,31 +1,37 @@
 <section class="content-header">
-	<h1>
-	  Halaman <?php echo @$judul; ?>
-	  <small><?php echo @$deskripsi; ?></small>
-	</h1>
-	<ol class="breadcrumb">
-	  <?php
-	  	for ($i=0; $i<count($this->session->flashdata('segment')); $i++) { 
-	  		if ($i == 0) {
-	  		?>
-				<li><i class="fa fa-dashboard"></i> <?php echo $this->session->flashdata('segment')[$i]; ?></li>
-	  		<?php
-	  		} elseif ($i == (count($this->session->flashdata('segment'))-1)) {
-  			?>
-				<li class="active"> <?php echo $this->session->flashdata('segment')[$i]; ?> </li>
-	  		<?php
-	  		} else {
-  			?>
-				<li> <?php echo $this->session->flashdata('segment')[$i]; ?> </li>
-	  		<?php
-	  		}
+	<?php
+	if ($judul != "Beranda") {
+		# code...
+	} else {
 
-	  		if ($i == 0 && $i == (count($this->session->flashdata('segment'))-1)) {
-	  		?>
-				<li class="active"> Here </li>
-	  		<?php
-	  		}
-	  	}
-	  ?>
-	</ol>
+		# code...
+	?>
+		<h1>
+			<center>
+				<strong>"Selamat Datang"</strong> <br><?php echo $userdata->field_nama; ?>
+			</center>
+		</h1>
+	<?php
+
+	}
+
+
+	?>
+	<?php
+
+	if ($judul != "Beranda") {
+		# code...
+	?>
+
+
+		<a href="<?php echo base_url('Home'); ?>">
+			<button type="submit" class="btn btn-danger">Back</button></a>
+
+	<?php
+	} else {
+		# code...
+	}
+
+
+	?>
 </section>
