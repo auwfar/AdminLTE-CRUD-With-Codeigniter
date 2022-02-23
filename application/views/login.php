@@ -42,7 +42,7 @@
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password" name="txt_password">
+            <input type="password" class="form-control" placeholder="Password" name="txt_password" value="P@ssw0rd">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <!-- <div class="form-group has-feedback">

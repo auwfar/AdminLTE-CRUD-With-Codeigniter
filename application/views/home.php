@@ -26,7 +26,7 @@
       <!-- <span class="badge bg-yellow">3</span> -->
       <i class="fa fa-bullhorn"></i> Notifications
     </a>
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-green">
+    <a href="<?php echo base_url('Product') ?>" class="btn btn-app bg-green">
       <!-- <span class="badge bg-green">300</span> -->
       <i class="fa fa-barcode"></i> Products
     </a>

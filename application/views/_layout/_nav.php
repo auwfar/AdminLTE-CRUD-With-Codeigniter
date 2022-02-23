@@ -11,10 +11,7 @@
         <!-- Menu Toggle Button -->
 
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        Online  <i class="fa fa-circle text-success"></i> 
-          <!-- The user image in the navbar-->
-          <!-- <img src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->foto; ?>" class="user-image" alt="User Image"> -->
-          <!-- hidden-xs hides the username on small devices so only the image appears. -->
+        Online  <i class="fa fa-circle text-success"></i>   
           
         </a>
       <li>

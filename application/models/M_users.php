@@ -6,12 +6,13 @@ class M_users extends CI_Model {
 		$this->db->where("field_user_id", $id);
 		$this->db->update("tbluserlogin", $data);
 
+		
 		return $this->db->affected_rows();
 	}
 
 	public function select($id = '') {
 		if ($id != '') {
-			$this->db->where('idd', $id);
+			$this->db->where('field_user_id', $id);
 		}
 
 		$data = $this->db->get('tbluserlogin');

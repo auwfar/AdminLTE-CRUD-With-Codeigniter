@@ -1,0 +1,528 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PHPExcel classes » \PHPExcel_Settings</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">PHPExcel classes</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/JAMA.html"><i class="icon-folder-open"></i> JAMA</a></li>
+<li><a href="../packages/JAMA%0D%0ACholesky%20decomposition%20class%0D%0AFor%20a%20symmetric,%20positive%20definite%20matrix%20A,%20the%20Cholesky%20decomposition%0D%0Ais%20an%20lower%20triangular%20matrix%20L%20so%20that%20A%20=%20L*L'.html"><i class="icon-folder-open"></i> JAMA
+Cholesky decomposition class
+For a symmetric, positive definite matrix A, the Cholesky decomposition
+is an lower triangular matrix L so that A = L*L'</a></li>
+<li><a href="../packages/JAMA%0D%0AClass%20to%20obtain%20eigenvalues%20and%20eigenvectors%20of%20a%20real%20matrix.html"><i class="icon-folder-open"></i> JAMA
+Class to obtain eigenvalues and eigenvectors of a real matrix</a></li>
+<li><a href="../packages/JAMA%0D%0AError%20handling.html"><i class="icon-folder-open"></i> JAMA
+Error handling</a></li>
+<li><a href="../packages/JAMA%0D%0AFor%20an%20m-by-n%20matrix%20A%20with%20m%20&gt;=%20n,%20the%20LU%20decomposition%20is%20an%20m-by-n%0D%0Aunit%20lower%20triangular%20matrix%20L,%20an%20n-by-n%20upper%20triangular%20matrix%20U,%0D%0Aand%20a%20permutation%20vector%20piv%20of%20length%20m%20so%20that%20A(piv,:)%20=%20L*U.html"><i class="icon-folder-open"></i> JAMA
+For an m-by-n matrix A with m &gt;= n, the LU decomposition is an m-by-n
+unit lower triangular matrix L, an n-by-n upper triangular matrix U,
+and a permutation vector piv of length m so that A(piv,:) = L*U</a></li>
+<li><a href="../packages/JAMA%0D%0AFor%20an%20m-by-n%20matrix%20A%20with%20m%20&gt;=%20n,%20the%20QR%20decomposition%20is%20an%20m-by-n%0D%0Aorthogonal%20matrix%20Q%20and%20an%20n-by-n%20upper%20triangular%20matrix%20R%20so%20that%0D%0AA%20=%20Q*R.html"><i class="icon-folder-open"></i> JAMA
+For an m-by-n matrix A with m &gt;= n, the QR decomposition is an m-by-n
+orthogonal matrix Q and an n-by-n upper triangular matrix R so that
+A = Q*R</a></li>
+<li><a href="../packages/JAMA%0D%0AFor%20an%20m-by-n%20matrix%20A%20with%20m%20&gt;=%20n,%20the%20singular%20value%20decomposition%20is%0D%0Aan%20m-by-n%20orthogonal%20matrix%20U,%20an%20n-by-n%20diagonal%20matrix%20S,%20and%0D%0Aan%20n-by-n%20orthogonal%20matrix%20V%20so%20that%20A%20=%20U*S*V'.html"><i class="icon-folder-open"></i> JAMA
+For an m-by-n matrix A with m &gt;= n, the singular value decomposition is
+an m-by-n orthogonal matrix U, an n-by-n diagonal matrix S, and
+an n-by-n orthogonal matrix V so that A = U*S*V'</a></li>
+<li><a href="../packages/JAMA%0D%0APythagorean%20Theorem:%0D%0Aa%20=%203%0D%0Ab%20=%204%0D%0Ar%20=%20sqrt(square(a)%20+%20square(b))%0D%0Ar%20=%205%0D%0Ar%20=%20sqrt(a%5E2%20+%20b%5E2)%20without%20under.overflow.html"><i class="icon-folder-open"></i> JAMA
+Pythagorean Theorem:
+a = 3
+b = 4
+r = sqrt(square(a) + square(b))
+r = 5
+r = sqrt(a^2 + b^2) without under/overflow</a></li>
+<li><a href="../packages/PHPExcel.html"><i class="icon-folder-open"></i> PHPExcel</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">551</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul>
+<li>todo 
+                <span class="label label-info">19</span>
+</li>
+<li>fixme 
+                <span class="label label-info">10</span>
+</li>
+</ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">12</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getCacheStorageClass" title="getCacheStorageClass :: Return the name of the class that is currently being used for cell cacheing"><span class="description">Return the name of the class that is currently being used for cell cacheing</span><pre>getCacheStorageClass()</pre></a></li>
+<li class="method public "><a href="#method_getCacheStorageMethod" title="getCacheStorageMethod :: Return the name of the method that is currently configured for cell cacheing"><span class="description">Return the name of the method that is currently configured for cell cacheing</span><pre>getCacheStorageMethod()</pre></a></li>
+<li class="method public "><a href="#method_getChartRendererName" title="getChartRendererName :: Return the Chart Rendering Library that PHPExcel is currently configured to use (e.g."><span class="description">Return the Chart Rendering Library that PHPExcel is currently configured to use (e.g.</span><pre>getChartRendererName()</pre></a></li>
+<li class="method public "><a href="#method_getChartRendererPath" title="getChartRendererPath :: Return the directory path to the Chart Rendering Library that PHPExcel is currently configured to use"><span class="description">Return the directory path to the Chart Rendering Library that PHPExcel is currently configured to use</span><pre>getChartRendererPath()</pre></a></li>
+<li class="method public "><a href="#method_getLibXmlLoaderOptions" title="getLibXmlLoaderOptions :: Get default options for libxml loader."><span class="description">Get default options for libxml loader.</span><pre>getLibXmlLoaderOptions()</pre></a></li>
+<li class="method public "><a href="#method_getPdfRendererName" title="getPdfRendererName :: Return the PDF Rendering Library that PHPExcel is currently configured to use (e.g."><span class="description">Return the PDF Rendering Library that PHPExcel is currently configured to use (e.g.</span><pre>getPdfRendererName()</pre></a></li>
+<li class="method public "><a href="#method_getPdfRendererPath" title="getPdfRendererPath :: Return the directory path to the PDF Rendering Library that PHPExcel is currently configured to use"><span class="description">Return the directory path to the PDF Rendering Library that PHPExcel is currently configured to use</span><pre>getPdfRendererPath()</pre></a></li>
+<li class="method public "><a href="#method_getZipClass" title="getZipClass :: Return the name of the Zip handler Class that PHPExcel is configured to use (PCLZip or ZipArchive)
+or Zip file management"><span class="description">Return the name of the Zip handler Class that PHPExcel is configured to use (PCLZip or ZipArchive)
+or Zip file management</span><pre>getZipClass()</pre></a></li>
+<li class="method public "><a href="#method_setCacheStorageMethod" title="setCacheStorageMethod :: Set the method that should be used for cell cacheing"><span class="description">Set the method that should be used for cell cacheing</span><pre>setCacheStorageMethod()</pre></a></li>
+<li class="method public "><a href="#method_setChartRenderer" title="setChartRenderer :: Set details of the external library that PHPExcel should use for rendering charts"><span class="description">Set details of the external library that PHPExcel should use for rendering charts</span><pre>setChartRenderer()</pre></a></li>
+<li class="method public "><a href="#method_setChartRendererName" title="setChartRendererName :: Identify to PHPExcel the external library to use for rendering charts"><span class="description">Identify to PHPExcel the external library to use for rendering charts</span><pre>setChartRendererName()</pre></a></li>
+<li class="method public "><a href="#method_setChartRendererPath" title="setChartRendererPath :: Tell PHPExcel where to find the external library to use for rendering charts"><span class="description">Tell PHPExcel where to find the external library to use for rendering charts</span><pre>setChartRendererPath()</pre></a></li>
+<li class="method public "><a href="#method_setLibXmlLoaderOptions" title="setLibXmlLoaderOptions :: Set default options for libxml loader"><span class="description">Set default options for libxml loader</span><pre>setLibXmlLoaderOptions()</pre></a></li>
+<li class="method public "><a href="#method_setLocale" title="setLocale :: Set the locale code to use for formula translations and any special formatting"><span class="description">Set the locale code to use for formula translations and any special formatting</span><pre>setLocale()</pre></a></li>
+<li class="method public "><a href="#method_setPdfRenderer" title="setPdfRenderer :: Set details of the external library that PHPExcel should use for rendering PDF files"><span class="description">Set details of the external library that PHPExcel should use for rendering PDF files</span><pre>setPdfRenderer()</pre></a></li>
+<li class="method public "><a href="#method_setPdfRendererName" title="setPdfRendererName :: Identify to PHPExcel the external library to use for rendering PDF files"><span class="description">Identify to PHPExcel the external library to use for rendering PDF files</span><pre>setPdfRendererName()</pre></a></li>
+<li class="method public "><a href="#method_setPdfRendererPath" title="setPdfRendererPath :: Tell PHPExcel where to find the external library to use for rendering PDF files"><span class="description">Tell PHPExcel where to find the external library to use for rendering PDF files</span><pre>setPdfRendererPath()</pre></a></li>
+<li class="method public "><a href="#method_setZipClass" title="setZipClass :: Set the Zip handler Class that PHPExcel should use for Zip file management (PCLZip or ZipArchive)"><span class="description">Set the Zip handler Class that PHPExcel should use for Zip file management (PCLZip or ZipArchive)</span><pre>setZipClass()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__chartRendererName" title="$_chartRendererName :: Name of the external Library used for rendering charts
+e.g."><span class="description"></span><pre>$_chartRendererName</pre></a></li>
+<li class="property private "><a href="#property__chartRendererPath" title="$_chartRendererPath :: Directory Path to the external Library used for rendering charts"><span class="description"></span><pre>$_chartRendererPath</pre></a></li>
+<li class="property private "><a href="#property__chartRenderers" title="$_chartRenderers :: "><span class="description"></span><pre>$_chartRenderers</pre></a></li>
+<li class="property private "><a href="#property__libXmlLoaderOptions" title="$_libXmlLoaderOptions :: Default options for libxml loader"><span class="description"></span><pre>$_libXmlLoaderOptions</pre></a></li>
+<li class="property private "><a href="#property__pdfRendererName" title="$_pdfRendererName :: Name of the external Library used for rendering PDF files
+e.g."><span class="description"></span><pre>$_pdfRendererName</pre></a></li>
+<li class="property private "><a href="#property__pdfRendererPath" title="$_pdfRendererPath :: Directory Path to the external Library used for rendering PDF files"><span class="description"></span><pre>$_pdfRendererPath</pre></a></li>
+<li class="property private "><a href="#property__pdfRenderers" title="$_pdfRenderers :: "><span class="description"></span><pre>$_pdfRenderers</pre></a></li>
+<li class="property private "><a href="#property__zipClass" title="$_zipClass :: Name of the class used for Zip file management
+e.g."><span class="description"></span><pre>$_zipClass</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_CHART_RENDERER_JPGRAPH" title="CHART_RENDERER_JPGRAPH :: Optional Chart Rendering libraries"><span class="description">Optional Chart Rendering libraries</span><pre>CHART_RENDERER_JPGRAPH</pre></a></li>
+<li class="constant  "><a href="#constant_PCLZIP" title="PCLZIP :: Available Zip library classes"><span class="description">Available Zip library classes</span><pre>PCLZIP</pre></a></li>
+<li class="constant  "><a href="#constant_PDF_RENDERER_DOMPDF" title="PDF_RENDERER_DOMPDF :: "><span class="description">PDF_RENDERER_DOMPDF</span><pre>PDF_RENDERER_DOMPDF</pre></a></li>
+<li class="constant  "><a href="#constant_PDF_RENDERER_MPDF" title="PDF_RENDERER_MPDF :: "><span class="description">PDF_RENDERER_MPDF</span><pre>PDF_RENDERER_MPDF</pre></a></li>
+<li class="constant  "><a href="#constant_PDF_RENDERER_TCPDF" title="PDF_RENDERER_TCPDF :: Optional PDF Rendering libraries"><span class="description">Optional PDF Rendering libraries</span><pre>PDF_RENDERER_TCPDF</pre></a></li>
+<li class="constant  "><a href="#constant_ZIPARCHIVE" title="ZIPARCHIVE :: "><span class="description">ZIPARCHIVE</span><pre>ZIPARCHIVE</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\PHPExcel_Settings"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/PHPExcel_Settings.html">PHPExcel_Settings</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getCacheStorageClass"></a><div class="element clickable method public method_getCacheStorageClass" data-toggle="collapse" data-target=".method_getCacheStorageClass .collapse">
+<h2>Return the name of the class that is currently being used for cell cacheing</h2>
+<pre>getCacheStorageClass() : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Name of the class currently being used for cacheing</div>
+</div></div>
+</div>
+<a id="method_getCacheStorageMethod"></a><div class="element clickable method public method_getCacheStorageMethod" data-toggle="collapse" data-target=".method_getCacheStorageMethod .collapse">
+<h2>Return the name of the method that is currently configured for cell cacheing</h2>
+<pre>getCacheStorageMethod() : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Name of the cacheing method</div>
+</div></div>
+</div>
+<a id="method_getChartRendererName"></a><div class="element clickable method public method_getChartRendererName" data-toggle="collapse" data-target=".method_getChartRendererName .collapse">
+<h2>Return the Chart Rendering Library that PHPExcel is currently configured to use (e.g.</h2>
+<pre>getChartRendererName() : string | NULL</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>jpgraph)</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>NULL</code>Internal reference name of the Chart Rendering Library that PHPExcel is
+currently configured to use
+e.g. PHPExcel_Settings::CHART_RENDERER_JPGRAPH</div>
+</div></div>
+</div>
+<a id="method_getChartRendererPath"></a><div class="element clickable method public method_getChartRendererPath" data-toggle="collapse" data-target=".method_getChartRendererPath .collapse">
+<h2>Return the directory path to the Chart Rendering Library that PHPExcel is currently configured to use</h2>
+<pre>getChartRendererPath() : string | NULL</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>NULL</code>Directory Path to the Chart Rendering Library that PHPExcel is
+	currently configured to use</div>
+</div></div>
+</div>
+<a id="method_getLibXmlLoaderOptions"></a><div class="element clickable method public method_getLibXmlLoaderOptions" data-toggle="collapse" data-target=".method_getLibXmlLoaderOptions .collapse">
+<h2>Get default options for libxml loader.</h2>
+<pre>getLibXmlLoaderOptions() : int</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Defaults to LIBXML_DTDLOAD | LIBXML_DTDATTR when not set explicitly.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>Default options for libxml loader</div>
+</div></div>
+</div>
+<a id="method_getPdfRendererName"></a><div class="element clickable method public method_getPdfRendererName" data-toggle="collapse" data-target=".method_getPdfRendererName .collapse">
+<h2>Return the PDF Rendering Library that PHPExcel is currently configured to use (e.g.</h2>
+<pre>getPdfRendererName() : string | NULL</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>dompdf)</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>NULL</code>Internal reference name of the PDF Rendering Library that PHPExcel is
+	currently configured to use
+ e.g. PHPExcel_Settings::PDF_RENDERER_TCPDF,
+ PHPExcel_Settings::PDF_RENDERER_DOMPDF
+ or PHPExcel_Settings::PDF_RENDERER_MPDF</div>
+</div></div>
+</div>
+<a id="method_getPdfRendererPath"></a><div class="element clickable method public method_getPdfRendererPath" data-toggle="collapse" data-target=".method_getPdfRendererPath .collapse">
+<h2>Return the directory path to the PDF Rendering Library that PHPExcel is currently configured to use</h2>
+<pre>getPdfRendererPath() : string | NULL</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>NULL</code>Directory Path to the PDF Rendering Library that PHPExcel is
+	currently configured to use</div>
+</div></div>
+</div>
+<a id="method_getZipClass"></a><div class="element clickable method public method_getZipClass" data-toggle="collapse" data-target=".method_getZipClass .collapse">
+<h2>Return the name of the Zip handler Class that PHPExcel is configured to use (PCLZip or ZipArchive)
+or Zip file management</h2>
+<pre>getZipClass() : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Name of the Zip handler Class that PHPExcel is configured to use
+for Zip file management
+e.g. PHPExcel_Settings::PCLZip or PHPExcel_Settings::ZipArchive</div>
+</div></div>
+</div>
+<a id="method_setCacheStorageMethod"></a><div class="element clickable method public method_setCacheStorageMethod" data-toggle="collapse" data-target=".method_setCacheStorageMethod .collapse">
+<h2>Set the method that should be used for cell cacheing</h2>
+<pre>setCacheStorageMethod(string $method, array $arguments) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>Name of the cacheing method</p></div>
+<div class="subelement argument">
+<h4>$arguments</h4>
+<code>array</code><p>Optional configuration arguments for the cacheing method</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setChartRenderer"></a><div class="element clickable method public method_setChartRenderer" data-toggle="collapse" data-target=".method_setChartRenderer .collapse">
+<h2>Set details of the external library that PHPExcel should use for rendering charts</h2>
+<pre>setChartRenderer(string $libraryName, string $libraryBaseDir) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$libraryName</h4>
+<code>string</code><p>Internal reference name of the library
+e.g. PHPExcel_Settings::CHART_RENDERER_JPGRAPH</p></div>
+<div class="subelement argument">
+<h4>$libraryBaseDir</h4>
+<code>string</code><p>Directory path to the library's base folder</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setChartRendererName"></a><div class="element clickable method public method_setChartRendererName" data-toggle="collapse" data-target=".method_setChartRendererName .collapse">
+<h2>Identify to PHPExcel the external library to use for rendering charts</h2>
+<pre>setChartRendererName(string $libraryName) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$libraryName</h4>
+<code>string</code><p>Internal reference name of the library
+e.g. PHPExcel_Settings::CHART_RENDERER_JPGRAPH</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setChartRendererPath"></a><div class="element clickable method public method_setChartRendererPath" data-toggle="collapse" data-target=".method_setChartRendererPath .collapse">
+<h2>Tell PHPExcel where to find the external library to use for rendering charts</h2>
+<pre>setChartRendererPath(string $libraryBaseDir) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$libraryBaseDir</h4>
+<code>string</code><p>Directory path to the library's base folder</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setLibXmlLoaderOptions"></a><div class="element clickable method public method_setLibXmlLoaderOptions" data-toggle="collapse" data-target=".method_setLibXmlLoaderOptions .collapse">
+<h2>Set default options for libxml loader</h2>
+<pre>setLibXmlLoaderOptions(int $options) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>int</code><p>Default options for libxml loader</p></div>
+</div></div>
+</div>
+<a id="method_setLocale"></a><div class="element clickable method public method_setLocale" data-toggle="collapse" data-target=".method_setLocale .collapse">
+<h2>Set the locale code to use for formula translations and any special formatting</h2>
+<pre>setLocale(string $locale) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$locale</h4>
+<code>string</code><p>The locale code to use (e.g. "fr" or "pt_br" or "en_uk")</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setPdfRenderer"></a><div class="element clickable method public method_setPdfRenderer" data-toggle="collapse" data-target=".method_setPdfRenderer .collapse">
+<h2>Set details of the external library that PHPExcel should use for rendering PDF files</h2>
+<pre>setPdfRenderer(string $libraryName, string $libraryBaseDir) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$libraryName</h4>
+<code>string</code><p>Internal reference name of the library
+	e.g. PHPExcel_Settings::PDF_RENDERER_TCPDF,
+	PHPExcel_Settings::PDF_RENDERER_DOMPDF
+ or PHPExcel_Settings::PDF_RENDERER_MPDF</p></div>
+<div class="subelement argument">
+<h4>$libraryBaseDir</h4>
+<code>string</code><p>Directory path to the library's base folder</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setPdfRendererName"></a><div class="element clickable method public method_setPdfRendererName" data-toggle="collapse" data-target=".method_setPdfRendererName .collapse">
+<h2>Identify to PHPExcel the external library to use for rendering PDF files</h2>
+<pre>setPdfRendererName(string $libraryName) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$libraryName</h4>
+<code>string</code><p>Internal reference name of the library
+	e.g. PHPExcel_Settings::PDF_RENDERER_TCPDF,
+PHPExcel_Settings::PDF_RENDERER_DOMPDF
+	or PHPExcel_Settings::PDF_RENDERER_MPDF</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setPdfRendererPath"></a><div class="element clickable method public method_setPdfRendererPath" data-toggle="collapse" data-target=".method_setPdfRendererPath .collapse">
+<h2>Tell PHPExcel where to find the external library to use for rendering PDF files</h2>
+<pre>setPdfRendererPath(string $libraryBaseDir) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$libraryBaseDir</h4>
+<code>string</code><p>Directory path to the library's base folder</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<a id="method_setZipClass"></a><div class="element clickable method public method_setZipClass" data-toggle="collapse" data-target=".method_setZipClass .collapse">
+<h2>Set the Zip handler Class that PHPExcel should use for Zip file management (PCLZip or ZipArchive)</h2>
+<pre>setZipClass(string $zipClass) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$zipClass</h4>
+<code>string</code><p>The Zip handler class that PHPExcel should use for Zip file management
+	 e.g. PHPExcel_Settings::PCLZip or PHPExcel_Settings::ZipArchive</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Success or failure</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__chartRendererName"> </a><div class="element clickable property private property__chartRendererName" data-toggle="collapse" data-target=".property__chartRendererName .collapse">
+<h2></h2>
+<pre>$_chartRendererName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>jpgraph</p></div></div></div>
+</div>
+<a id="property__chartRendererPath"> </a><div class="element clickable property private property__chartRendererPath" data-toggle="collapse" data-target=".property__chartRendererPath .collapse">
+<h2></h2>
+<pre>$_chartRendererPath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__chartRenderers"> </a><div class="element clickable property private property__chartRenderers" data-toggle="collapse" data-target=".property__chartRenderers .collapse">
+<h2></h2>
+<pre>$_chartRenderers </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__libXmlLoaderOptions"> </a><div class="element clickable property private property__libXmlLoaderOptions" data-toggle="collapse" data-target=".property__libXmlLoaderOptions .collapse">
+<h2></h2>
+<pre>$_libXmlLoaderOptions : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__pdfRendererName"> </a><div class="element clickable property private property__pdfRendererName" data-toggle="collapse" data-target=".property__pdfRendererName .collapse">
+<h2></h2>
+<pre>$_pdfRendererName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>mPDF</p></div></div></div>
+</div>
+<a id="property__pdfRendererPath"> </a><div class="element clickable property private property__pdfRendererPath" data-toggle="collapse" data-target=".property__pdfRendererPath .collapse">
+<h2></h2>
+<pre>$_pdfRendererPath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__pdfRenderers"> </a><div class="element clickable property private property__pdfRenderers" data-toggle="collapse" data-target=".property__pdfRenderers .collapse">
+<h2></h2>
+<pre>$_pdfRenderers </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__zipClass"> </a><div class="element clickable property private property__zipClass" data-toggle="collapse" data-target=".property__zipClass .collapse">
+<h2></h2>
+<pre>$_zipClass : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>ZipArchive</p></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_CHART_RENDERER_JPGRAPH"> </a><div class="element clickable constant  constant_CHART_RENDERER_JPGRAPH" data-toggle="collapse" data-target=".constant_CHART_RENDERER_JPGRAPH .collapse">
+<h2>Optional Chart Rendering libraries</h2>
+<pre>CHART_RENDERER_JPGRAPH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PCLZIP"> </a><div class="element clickable constant  constant_PCLZIP" data-toggle="collapse" data-target=".constant_PCLZIP .collapse">
+<h2>Available Zip library classes</h2>
+<pre>PCLZIP </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PDF_RENDERER_DOMPDF"> </a><div class="element clickable constant  constant_PDF_RENDERER_DOMPDF" data-toggle="collapse" data-target=".constant_PDF_RENDERER_DOMPDF .collapse">
+<h2>PDF_RENDERER_DOMPDF</h2>
+<pre>PDF_RENDERER_DOMPDF </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PDF_RENDERER_MPDF"> </a><div class="element clickable constant  constant_PDF_RENDERER_MPDF" data-toggle="collapse" data-target=".constant_PDF_RENDERER_MPDF .collapse">
+<h2>PDF_RENDERER_MPDF</h2>
+<pre>PDF_RENDERER_MPDF </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PDF_RENDERER_TCPDF"> </a><div class="element clickable constant  constant_PDF_RENDERER_TCPDF" data-toggle="collapse" data-target=".constant_PDF_RENDERER_TCPDF .collapse">
+<h2>Optional PDF Rendering libraries</h2>
+<pre>PDF_RENDERER_TCPDF </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ZIPARCHIVE"> </a><div class="element clickable constant  constant_ZIPARCHIVE" data-toggle="collapse" data-target=".constant_ZIPARCHIVE .collapse">
+<h2>ZIPARCHIVE</h2>
+<pre>ZIPARCHIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2014-03-02T15:27:36Z.<br></footer></div>
+</div>
+</body>
+</html>
