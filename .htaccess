@@ -1,5 +1,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+# Require HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Removing the index.php file - https://codeigniter.com/userguide3
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
