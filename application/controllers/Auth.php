@@ -31,8 +31,8 @@ class Auth extends CI_Controller
 
 
 		if ($this->form_validation->run() == TRUE) {
-			echo $username = trim($_POST['txt_email']);
-			echo $pass = trim($_POST['txt_password']);
+			$username = trim($_POST['txt_email']);
+			$pass = trim($_POST['txt_password']);
 
 
 
