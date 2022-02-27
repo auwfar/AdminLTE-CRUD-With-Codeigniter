@@ -1,5 +1,5 @@
 # AdminLTE-CRUD-With-Codeigniter
-CRUD dengan Template Admin LTE menggunakan Codeigniter
+Users dengan Template Admin LTE menggunakan Codeigniter
 
 Fitur : 
   1. CRUD with Ajax
@@ -8,6 +8,6 @@ Fitur :
   4. Chart
   
 Akun Login :
-  1. username : auwfar / password : auwfar
-  2. username : ozil / password : ozil
+  1. username :  /  : 
+  2. username :  /  : 
   3. username : musaeri / Password : P@ssw0rd
