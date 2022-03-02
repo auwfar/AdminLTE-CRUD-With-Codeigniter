@@ -11,6 +11,8 @@
 	window.onload = function() {
 		tampilPegawai();
 		tampilPosisi();
+		tampilProduct();
+		tampilPricegold();
 		tampilKota();
 		<?php
 		if ($this->session->flashdata('msg') != '') {
@@ -393,7 +395,7 @@
 
 
 	//Product
-	function tampilPosisi() {
+	function tampilProduct() {
 		$.get('<?php echo base_url('Product/tampil'); ?>', function(data) {
 			MyTable.fnDestroy();
 			$('#data-product').html(data);
@@ -401,6 +403,12 @@
 		});
 	}
 
-
-
+	//Price Gold
+	function tampilPricegold() {
+		$.get('<?php echo base_url('Pricegold/tampil'); ?>', function(data) {
+			MyTable.fnDestroy();
+			$('#data-pricegold').html(data);
+			refresh();
+		});
+	}
 </script>

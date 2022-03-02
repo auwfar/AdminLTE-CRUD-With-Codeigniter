@@ -7,7 +7,7 @@
   </div> -->
   <div class="box-body  text-center">
 
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-orange">
+    <a href="<?php echo base_url('Pricegold') ?>" class="btn btn-app bg-orange">
       <i class="fa fa-edit"></i> Info
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-blue">
@@ -17,10 +17,10 @@
       <i class="fa fa-gear"></i> Setting
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-blue">
-      <i class="fa fa-pause"></i> Pause
+      <i class="fa fa-pause"></i> 
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-maroon">
-      <i class="fa fa-save"></i> Save
+      <i class="fa fa-save"></i> 
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-yellow">
       <!-- <span class="badge bg-yellow">3</span> -->

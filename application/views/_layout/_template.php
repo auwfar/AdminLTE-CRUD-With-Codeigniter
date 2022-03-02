@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Menu Customer|bspintar.id</title>
+  <title>Menu</title>
   <!-- meta -->
   
   <?php echo @$_meta; ?>
