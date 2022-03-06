@@ -7,12 +7,13 @@
 		"info": true,
 		"autoWidth": false
 	});
-
+//harus di tampilkan 
 	window.onload = function() {
 		tampilPegawai();
 		tampilPosisi();
 		tampilProduct();
 		tampilPricegold();
+		tampilMutasi();
 		tampilKota();
 		<?php
 		if ($this->session->flashdata('msg') != '') {
@@ -408,6 +409,15 @@
 		$.get('<?php echo base_url('Pricegold/tampil'); ?>', function(data) {
 			MyTable.fnDestroy();
 			$('#data-pricegold').html(data);
+			refresh();
+		});
+	}
+
+	//Mutasi
+	function tampilMutasi() {
+		$.get('<?php echo base_url('Mutasi/tampil'); ?>', function(data) {
+			MyTable.fnDestroy();
+			$('#data-mutasi').html(data);
 			refresh();
 		});
 	}

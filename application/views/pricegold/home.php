@@ -15,8 +15,7 @@
     <table id="" class="table table-bordered table-striped ">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Nama</th>
+          <th>#</th>          
           <th>Price</th>
           <th>Rasio</th>
           <th style="text-align: center;">Action</th>

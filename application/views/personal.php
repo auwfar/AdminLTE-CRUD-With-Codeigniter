@@ -36,12 +36,12 @@
   <div class="col-md-9">
     <div class="nav-tabs-custom">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#settings" data-toggle="tab">Users</a></li>
-        <li ><a href="#password" data-toggle="tab">Ubah Password</a></li>
-        <li><a href="#personal" data-toggle="tab">Personal</a></li>
+        <li><a href="#settings" data-toggle="tab">Users</a></li>
+        <li ><a href="#password" data-toggle="tab">Settings Password</a></li>
+        <li class="active"><a href="#personal" data-toggle="tab">Personal</a></li>
       </ul>
       <div class="tab-content">
-        <div class="active tab-pane" id="settings">
+        <div class="tab-pane" id="settings">
           <form class="form-horizontal" action="<?php echo base_url('Profile/update') ?>" method="POST" enctype="multipart/form-data">
             <div class="form-group">
               <label for="inputUsername" class="col-sm-2 control-label">Email</label>
@@ -70,7 +70,7 @@
           </form>
         </div>
         <div class="tab-pane" id="password">
-          <form class="form-horizontal" action="<?php echo base_url('Profile/ubah_password') ?>" method="POST">
+          <form class="form-horizontal" action="<?php echo base_url('Changepassword/ubah_password') ?>" method="POST">
             <div class="form-group">
               <label for="passLama" class="col-sm-2 control-label">Password Lama</label>
               <div class="col-sm-10">
@@ -97,8 +97,8 @@
             </div>
           </form>
         </div>
-        <div class="tab-pane" id="personal">
-          <form class="form-horizontal" action="<?php echo base_url('Profile/personal') ?>" method="POST">
+        <div class="active tab-pane" id="personal">
+          <form class="form-horizontal" action="<?php echo base_url('Personal/personal') ?>" method="POST">
             <div class="form-group">
               <label for="passLama" class="col-sm-2 control-label">NIK</label>
               <div class="col-sm-10">

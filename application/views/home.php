@@ -10,17 +10,17 @@
     <a href="<?php echo base_url('Pricegold') ?>" class="btn btn-app bg-orange">
       <i class="fa fa-edit"></i> Info
     </a>
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-blue">
+    <a href="<?php echo base_url('Mutasi') ?>" class="btn btn-app bg-blue">
       <i class="fa fa-tasks"></i> Mutasi
     </a>
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-navy">
+    <a href="<?php echo base_url('Changepassword') ?>" class="btn btn-app bg-navy">
       <i class="fa fa-gear"></i> Setting
     </a>
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-blue">
-      <i class="fa fa-pause"></i> 
+    <a href="<?php echo base_url('Personal') ?>" class="btn btn-app bg-blue">
+      <i class="fa fa-pause"></i> Data
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-maroon">
-      <i class="fa fa-save"></i> 
+      <i class="fa fa-save"></i> Saldo
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-yellow">
       <!-- <span class="badge bg-yellow">3</span> -->

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Profile extends AUTH_Controller
+class Changepassword extends AUTH_Controller
 {
 	public function __construct()
 	{
@@ -15,9 +15,9 @@ class Profile extends AUTH_Controller
 
 		// var_dump($id);
 		// die();
-		$data['page'] 			= "profile";
-		$data['judul'] 			= "Profile";
-		$data['deskripsi'] 		= "Setting Profile";
+		$data['page'] 			= "changepassword";
+		$data['judul'] 			= "Change Password";
+		$data['deskripsi'] 		= "Change Password";
 
 		$get_prov = $this->db->select('*')->from('tblwilayahprovinsi')->get();
 		$data['provinsi'] = $get_prov->result();
@@ -30,7 +30,7 @@ class Profile extends AUTH_Controller
 		$data['customer'] = $get_cus->row();
 		// var_dump($data);
 		// die();
-		$this->template->views('profile', $data);
+		$this->template->views('password', $data);
 	}
 
 	// function index()

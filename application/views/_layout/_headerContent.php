@@ -15,15 +15,14 @@
 
 	}
 
+	// var_dump($userdata);
 
 	?>
 	<?php
 
 	if ($judul != "Beranda") {
-		# code...
+
 	?>
-
-
 		<a href="<?php echo base_url('Home'); ?>">
 			<button type="submit" class="btn btn-danger">Back</button></a>
 

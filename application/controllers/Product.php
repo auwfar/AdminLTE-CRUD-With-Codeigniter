@@ -18,7 +18,7 @@ class Product extends AUTH_Controller
 		$data['judul'] 		= "Data Product";
 		$data['deskripsi'] 	= "Manage Data Product";
 		
-		$data['modal_tambah_posisi'] = show_my_modal('modals/modal_tambah_posisi', 'tambah-posisi', $data);
+		// $data['modal_tambah_posisi'] = show_my_modal('modals/modal_tambah_posisi', 'tambah-posisi', $data);
 		
 		$this->template->views('product/home', $data);
 	}

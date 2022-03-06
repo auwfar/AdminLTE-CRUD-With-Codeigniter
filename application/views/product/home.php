@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<?php echo $modal_tambah_posisi; ?>
+
 
 <div id="tempat-modal"></div>
 

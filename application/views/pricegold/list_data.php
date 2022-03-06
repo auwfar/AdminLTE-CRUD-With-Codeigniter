@@ -3,8 +3,8 @@ $no = 1;
 foreach ($dataPricegold as $gold) {
 ?>
   <tr>
-    <td><?php echo $gold->field_datetime_gold; ?></td>
-    <td><?php echo $gold->field_name; ?></td>
+    <td><?php echo  date("d M Y /H:i:s", strtotime($gold->field_datetime_gold)); ?></td>
+    
     <td> Sell &ensp;
       <b> <?php echo 'Rp. ' . number_format($gold->field_sell, 0, ",", "."); ?></b> <br> Buyback &ensp;
       <b> <?php echo 'Rp. ' . number_format($gold->field_buyback, 0, ",", "."); ?></b>

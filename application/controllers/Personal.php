@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Profile extends AUTH_Controller
+class Personal extends AUTH_Controller
 {
 	public function __construct()
 	{
@@ -15,9 +15,9 @@ class Profile extends AUTH_Controller
 
 		// var_dump($id);
 		// die();
-		$data['page'] 			= "profile";
-		$data['judul'] 			= "Profile";
-		$data['deskripsi'] 		= "Setting Profile";
+		$data['page'] 			= "personal";
+		$data['judul'] 			= "Personal";
+		$data['deskripsi'] 		= "Setting Personal";
 
 		$get_prov = $this->db->select('*')->from('tblwilayahprovinsi')->get();
 		$data['provinsi'] = $get_prov->result();
@@ -30,7 +30,7 @@ class Profile extends AUTH_Controller
 		$data['customer'] = $get_cus->row();
 		// var_dump($data);
 		// die();
-		$this->template->views('profile', $data);
+		$this->template->views('personal', $data);
 	}
 
 	// function index()
@@ -139,6 +139,8 @@ class Profile extends AUTH_Controller
 		$this->form_validation->set_rules('passLama', 'Password Lama', 'trim|required');
 		$this->form_validation->set_rules('passBaru', 'Password Baru', 'trim|required');
 		$this->form_validation->set_rules('passKonf', 'Password Konfirmasi', 'trim|required');
+
+		echo "personal";
 	}
 
 
