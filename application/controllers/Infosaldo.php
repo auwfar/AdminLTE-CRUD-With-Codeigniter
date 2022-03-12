@@ -14,20 +14,19 @@ class Infosaldo extends AUTH_Controller {
 // var_dump($data['dataInfosaldo'] 	= $this->M_saldo->select_all($id));
 // die();
 		$data['page'] 		= "infosaldo";
-		$data['judul'] 		= "Info Saldo";
+		$data['judul'] 		= "Infosaldo";
 		$data['deskripsi'] 	= "Manage Data Saldo";
 
-		
-
-		$this->template->views('Infosaldo/home', $data);
+		$this->template->views('infosaldo/home', $data);
 	}
 
-	// public function tampil() {
-	// 	$data['dataInfosaldo'] = $this->M_kota->select_all();
-	// 	$this->load->view('Infosaldo/list_data', $data);
-	// }
+	public function tampil() {
+		$id = $this->userdata->field_member_id;
+		$data['dataInfosaldo'] = $this->M_saldo->select_all($id);
+		$this->load->view('infosaldo/list_data', $data);
+	}
 	
 }
 
-/* End of file Kota.php */
-/* Location: ./application/controllers/Kota.php */
+/* End of file Infosaldo.php */
+/* Location: ./application/controllers/Infosaldo.php */

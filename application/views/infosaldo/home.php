@@ -57,6 +57,6 @@
 
 <?php
 $data['judul'] = 'Infosaldo';
-// $data['url'] = 'Infosaldo/import';
-// echo show_my_modal('modals/modal_import', 'import-kota', $data);
+$data['url'] = 'Infosaldo/import';
+echo show_my_modal('modals/modal_import', 'import-infosaldo', $data);
 ?>

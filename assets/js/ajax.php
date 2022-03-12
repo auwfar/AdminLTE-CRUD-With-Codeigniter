@@ -14,6 +14,7 @@
 		tampilProduct();
 		tampilPricegold();
 		tampilMutasi();
+		tampilInfosaldo();
 		tampilKota();
 		<?php
 		if ($this->session->flashdata('msg') != '') {
@@ -418,6 +419,14 @@
 		$.get('<?php echo base_url('Mutasi/tampil'); ?>', function(data) {
 			MyTable.fnDestroy();
 			$('#data-mutasi').html(data);
+			refresh();
+		});
+	}
+		//Saldo
+		function tampilInfosaldo() {
+		$.get('<?php echo base_url('Infosaldo/tampil'); ?>', function(data) {
+			MyTable.fnDestroy();
+			$('#data-infosaldo').html(data);
 			refresh();
 		});
 	}
