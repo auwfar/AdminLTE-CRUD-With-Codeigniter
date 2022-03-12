@@ -10,9 +10,9 @@ foreach ($dataMutasi as $mutasi) {
     <td>  <?php if ($mutasi->field_type_saldo == '300') {
         echo "B";
       } elseif ($mutasi->field_type_saldo == '200') {
-        echo $mutasi->field_debit_saldo;
+        echo number_format($mutasi->field_debit_saldo,3);
       } elseif ($mutasi->field_type_saldo == '100') {
-        echo $mutasi->field_kredit_saldo;
+        echo number_format( $mutasi->field_kredit_saldo,3)." Gram"; 
       }
 
       ?></td>
@@ -28,7 +28,7 @@ foreach ($dataMutasi as $mutasi) {
       ?>
     </td>
     <span class="btn btn-danger"></span>
-    <td><?php echo $mutasi->field_total_saldo; ?></td>
+    <td><?php echo number_format($mutasi->field_total_saldo,3); ?></td>
     <!-- <td class="text-center" style="min-width:230px;">
     </td> -->
   </tr>

@@ -5,19 +5,19 @@
 <div class="box">
   <div class="box-header">
     <div class="col-md-6" style="padding: 0;">
-    <?php echo $userdata->field_nama; ?> <br>
-    <?php echo $userdata->field_member_id; ?> <br>
-    <?php echo $userdata->field_branch; ?> <br>
+      <?php echo $userdata->field_nama; ?> <br>
+      <?php echo $userdata->field_member_id; ?> <br>
+      <?php echo $userdata->field_branch; ?> <br>
     </div>
     <div class="col-md-3">
     </div>
     <div class="col-md-3">
-    
+
     </div>
   </div>
   <!-- /.box-header -->
   <div class="box-body">
-    <table id="list-data" class="table table-bordered table-striped">
+    <table id="list-data" class="table table-bordered table-striped"> 
       <thead>
         <tr>
           <!-- <th style="text-align: center;">Aksi</th> -->

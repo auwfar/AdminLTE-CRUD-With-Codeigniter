@@ -19,7 +19,7 @@
     <a href="<?php echo base_url('Personal') ?>" class="btn btn-app bg-blue">
       <i class="fa fa-pause"></i> Data
     </a>
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-maroon">
+    <a href="<?php echo base_url('Infosaldo') ?>" class="btn btn-app bg-maroon">
       <i class="fa fa-save"></i> Saldo
     </a>
     <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-yellow">

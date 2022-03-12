@@ -6,7 +6,7 @@
 
 
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>BSP</b>IN</span>
+    <span class="logo-lg"><b> </b></span>
   </a>
 
   <!-- nav -->

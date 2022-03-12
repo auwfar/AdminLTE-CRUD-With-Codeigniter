@@ -9,20 +9,20 @@ class Infosaldo extends AUTH_Controller {
 
 	public function index() {
 		$data['userdata'] 	= $this->userdata;
-		$data['dataKota'] 	= $this->M_kota->select_all();
+		$data['dataInfosaldo'] 	= $this->M_kota->select_all();
 
 		$data['page'] 		= "infosaldo";
 		$data['judul'] 		= "Info Saldo";
 		$data['deskripsi'] 	= "Manage Data Saldo";
 
-		$data['modal_tambah_kota'] = show_my_modal('modals/modal_tambah_kota', 'tambah-kota', $data);
+		
 
-		$this->template->views('kota/home', $data);
+		$this->template->views('Infosaldo/home', $data);
 	}
 
 	public function tampil() {
-		$data['dataKota'] = $this->M_kota->select_all();
-		$this->load->view('kota/list_data', $data);
+		$data['dataInfosaldo'] = $this->M_kota->select_all();
+		$this->load->view('Infosaldo/list_data', $data);
 	}
 	
 }
