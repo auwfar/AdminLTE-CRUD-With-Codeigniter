@@ -44,12 +44,11 @@
               <th scope="row">4</th>
               <td>Saldo</td>
               <td>:</td>
-              <td>Musaeri</td>
+              <td><?php echo $dataInfosaldo->field_total_saldo; ?></td>
             </tr>
           </tbody>
         </table>
       </div>
-
 
     </div>
   </div>
