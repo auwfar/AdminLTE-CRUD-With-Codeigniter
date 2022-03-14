@@ -26,19 +26,19 @@
               <th scope="row">1</th>
               <td>Nama Lengkap</td>
               <td>:</td>
-              <td><?php echo $userdata->field_nama; ?></td>
+              <td><?php echo $dataInfosaldo->field_nama_customer; ?></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Rekening</td>
               <td>:</td>
-              <td><?php echo $userdata->field_member_id; ?></td>
+              <td><?php echo $dataInfosaldo->field_rekening; ?></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>No Id Member</td>
               <td>:</td>
-              <td><?php echo $userdata->field_member_id; ?></td>
+              <td><?php echo $dataInfosaldo->field_member_id; ?></td>
             </tr>
             <tr>
               <th scope="row">4</th>
