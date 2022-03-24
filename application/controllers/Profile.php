@@ -12,9 +12,6 @@ class Profile extends AUTH_Controller
 	{
 		$data['userdata'] 		= $this->userdata;
 		$id = $this->userdata->field_member_id;
-
-		// var_dump($id);
-		// die();
 		$data['page'] 			= "profile";
 		$data['judul'] 			= "Profile";
 		$data['deskripsi'] 		= "Setting Profile";
@@ -28,16 +25,9 @@ class Profile extends AUTH_Controller
 		$get_cus = $this->db->query($sql);
 
 		$data['customer'] = $get_cus->row();
-		// var_dump($data);
-		// die();
 		$this->template->views('profile', $data);
 	}
 
-	// function index()
-	// {
-
-	// 	$this->load->view('wilayah_view', $data);
-	// }
 
 	public function update()
 	{
@@ -136,9 +126,16 @@ class Profile extends AUTH_Controller
 	}
 	public function personal($id)
 	{
-		$this->form_validation->set_rules('passLama', 'Password Lama', 'trim|required');
-		$this->form_validation->set_rules('passBaru', 'Password Baru', 'trim|required');
-		$this->form_validation->set_rules('passKonf', 'Password Konfirmasi', 'trim|required');
+		$this->form_validation->set_rules('ktp', 'ktp', 'trim|required');
+		// $this->form_validation->set_rules('passBaru', 'Password Baru', 'trim|required');
+		// $this->form_validation->set_rules('passKonf', 'Password Konfirmasi', 'trim|required');
+		if ($this->form_validation->run() == TRUE) {
+			echo "1";
+		} else {
+			// $this->session->set_flashdata('msg', show_err_msg(validation_errors()));
+			// redirect('Changepassword');
+			echo "2";
+		}
 	}
 
 

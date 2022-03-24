@@ -5,12 +5,12 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->field_photo; ?>" class="img-circle" alt="User Image">
+        <img style="width: 25px;height:25px;" src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->field_photo; ?>" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
         <p><?php echo $userdata->field_nama; ?></p>
         <!-- Status -->
-        <a href="<?php echo base_url(); ?>assets/#"><i class="fa fa-circle text-success"></i> Online</a>
+        <!-- <a href="<?php echo base_url(); ?>assets/#"><i class="fa fa-circle text-success"></i> Online</a> -->
       </div>
     </div>
 

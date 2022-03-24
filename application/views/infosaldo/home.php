@@ -2,9 +2,7 @@
   <?php echo @$this->session->flashdata('msg'); ?>
 </div>
 <div class="box">
-  <div class="box-header">
-
-    saldo
+  <div class="box-header">   
 
   </div>
   <!-- /.box-header -->

@@ -3,8 +3,8 @@
     <!-- Profile Image -->
     <div class="box box-primary">
       <div class="box-body box-profile">
-        <img class="profile-user-img img-responsive img-circle" src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->field_photo; ?>" alt="User profile picture">
-
+        <!-- <img class="profile-user-img img-responsive img-circle"  src="" alt="User profile picture"> -->
+        <img class="profile-user-img img-responsive img-circle" style="width: 80px;height:80px;" src="<?php echo base_url(); ?>assets/img/<?php echo $userdata->field_photo; ?>" alt="User profile picture">
         <h3 class="profile-username text-center"><?php echo $userdata->field_nama; ?></h3>
         <p class="text-muted text-center">
           <?php
@@ -102,7 +102,7 @@
             <div class="form-group">
               <label for="passLama" class="col-sm-2 control-label">NIK</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" value="<?php echo $customer->field_ktp; ?>" data-inputmask="'mask': '999999 9999999999'" data-mask>
+                <input type="text" class="form-control" name="ktp" value="<?php echo $customer->field_ktp; ?>" data-inputmask="'mask': '999999 9999999999'" data-mask>
               </div>
             </div>
             <div class="form-group">
