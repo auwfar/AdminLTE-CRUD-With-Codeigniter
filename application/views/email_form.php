@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CodeIgniter Email Example</title>
+    <title>Email</title>
 </head>
 
 <body>
@@ -11,7 +11,10 @@
     echo $this->session->flashdata('email_sent');
     echo form_open('/Email_controller/send_mail');
     ?>
-
+    <select name="pilih" id="pilih">
+        <option value="register">Register</option>
+        <option value="forgot">Forgot password</option>
+    </select>
     <input type="email" name="email" value="" required />
     <input type="submit" value="SEND MAIL">
 
@@ -21,3 +24,4 @@
 </body>
 
 </html>
+

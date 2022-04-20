@@ -39,9 +39,9 @@ class Profile extends AUTH_Controller
 		$data = $this->input->post();
 
 		if ($this->form_validation->run() == TRUE) {
-			$config['upload_path'] = './assets/img/';
+			$config['upload_path'] ='./assets/img/';
 			$config['allowed_types'] = 'jpg|png|svg';
-			// $config['max_size']             = 100;
+			$config['max_size']        = 2048;
 			// $config['max_width']            = 215;
 			// $config['max_height']           = 215;
 			$config['file_name'] = $id;
@@ -57,11 +57,17 @@ class Profile extends AUTH_Controller
 				// var_dump($data_foto);	
 				// die();
 				$data['field_photo'] = $data_foto['file_name'];
-				// var_dump($data);
-				// die();
 			}
 
 			$result = $this->M_users->update($data, $id);
+
+			// if ($data('field_photo') != 'user.png') {
+			// 	$old_image = FCPATH . 'assets/img/avatar/' . $data('field_photo');
+			// 	if (!unlink($old_image)) {
+			// 		set_pesan('gagal hapus foto lama.');
+			// 		redirect('Profile');
+			// 	}
+			// }
 
 
 			if ($result > 0) {
