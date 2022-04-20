@@ -5,6 +5,7 @@ deployment:
     - /bin/cp -R application $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R system $DEPLOYPATH
+    - /bin/cp -R vendor $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH    
     - /bin/cp .cpanel.yml $DEPLOYPATH    
     - /bin/cp .htaccess $DEPLOYPATH
