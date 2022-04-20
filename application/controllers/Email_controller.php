@@ -18,7 +18,7 @@ class Email_controller extends CI_Controller
   public function index()
   {
     echo sendmail();
-    // $this->load->helper('form');
+    $this->load->helper('form');
     $this->load->view('email_form');
   }
   public function send_mail()
