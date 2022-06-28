@@ -27,7 +27,7 @@
   <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="<?php echo base_url(); ?>assets/index2.html"><b>Admin</b>CRUD</a>
+        <a href="<?php echo base_url('Auth/login'); ?>"><b>Login</b></a>
       </div>
 
       <!-- /.login-logo -->
@@ -38,13 +38,17 @@
 
         <form action="<?php echo base_url('Auth/login'); ?>" method="post">
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" placeholder="Username" name="username">
+            <input type="email" class="form-control" placeholder="Email" name="txt_email" value="musaeri.kjt@gmail.com">
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password" name="password">
+            <input type="password" class="form-control" placeholder="Password" name="txt_password" value="P@ssw0rd">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
+          <!-- <div class="form-group has-feedback">
+            <input type="password" class="form-control" placeholder="Password" name="password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div> -->
           <div class="row">
             <!-- <div class="col-xs-8">
               <div class="checkbox icheck">
