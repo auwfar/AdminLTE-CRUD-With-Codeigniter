@@ -20,7 +20,7 @@ class Profile extends AUTH_Controller
 		$data['provinsi'] = $get_prov->result();
 		$data['path'] = base_url('assets');
 
-		$sql = "SELECT * FROM tblcustomer WHERE field_member_id =$id";
+		$sql = "SELECT * FROM tblnasabah N JOIN tbluserlogin U WHERE U.field_member_id =$id";
 
 		$get_cus = $this->db->query($sql);
 

@@ -13,7 +13,7 @@ class Auth extends CI_Controller
 	{
 		$session = $this->session->userdata('status');
 
-	
+
 		if ($session == '') {
 			$this->load->view('login');
 		} else {
@@ -23,41 +23,22 @@ class Auth extends CI_Controller
 
 	public function login()
 	{
-
-		// var_dump($this->form_validation->set_rules());
-		// $this->form_validation->set_rules('username', 'Username', 'required|min_length[4]|max_length[15]');
 		$this->form_validation->set_rules('txt_email', 'Email', 'required');
 		$this->form_validation->set_rules('txt_password', 'Password', 'required');
-
-
 		if ($this->form_validation->run() == TRUE) {
 			$username = trim($_POST['txt_email']);
 			$pass = trim($_POST['txt_password']);
-
-
-
 			$data = $this->M_auth->login($username);
-			// // var_dump($data->password);
-			// // die();
-			// if (!password_verify($pass, $data->password) == true) {
-			// 	echo "Benar";
-			// } else {
-
-			// 	echo "salah";
-			// }
-			// die();
 			if (!password_verify($pass, $data->field_password) == true) {
-			// if ($data == false) {
 				$this->session->set_flashdata('error_msg', 'Username / Password Anda Salah.');
 				redirect('Auth');
-			} else {	
+			} else {
 				$session = [
 					'userdata' => $data,
-					'status' => "Loged in"
+					'status' => "Loged in",
+					'logged_in' => TRUE
 				];
 				$this->session->set_userdata($session);
-				// var_dump	($session);
-				// die();
 				redirect('Home');
 			}
 		} else {
@@ -66,8 +47,16 @@ class Auth extends CI_Controller
 		}
 	}
 
+	public function register()
+	{
+		$data['userdata'] 	= "1";
+		$data['page'] 		= "register";
+		$data['judul'] 		= "Data Posisi";
+		$data['deskripsi'] 	= "Manage Data Posisi";
+		$this->template->views('register', $data);
+	}
 
-	
+
 
 	public function logout()
 	{

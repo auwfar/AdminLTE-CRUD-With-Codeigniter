@@ -36,6 +36,7 @@
 <div id="tempat-modal"></div>
 
 <?php show_my_confirm('konfirmasiHapus', 'hapus-dataPosisi', 'Hapus Data Ini?', 'Ya, Hapus Data Ini'); ?>
+
 <?php
   $data['judul'] = 'Posisi';
   $data['url'] = 'Posisi/import';

@@ -22,22 +22,22 @@
     <a href="<?php echo base_url('Infosaldo') ?>" class="btn btn-app bg-maroon">
       <i class="fa fa-save"></i> Saldo
     </a>
-    <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-yellow">
-      <!-- <span class="badge bg-yellow">3</span> -->
+    <!-- <a href="<?php echo base_url('Posisi') ?>" class="btn btn-app bg-yellow">
+      <span class="badge bg-yellow">3</span>
       <i class="fa fa-bullhorn"></i> Notifications
-    </a>
-    <a href="<?php echo base_url('Product') ?>" class="btn btn-app bg-green">
-      <!-- <span class="badge bg-green">300</span> -->
+    </a> -->
+    <!-- <a href="<?php echo base_url('Product') ?>" class="btn btn-app bg-green">
+      <span class="badge bg-green">300</span>
       <i class="fa fa-barcode"></i> Products
-    </a>
+    </a> -->
     <a href="<?php echo base_url('Profile') ?>" class="btn btn-app bg-purple">
       <!-- <span class="badge bg-purple">891</span> -->
       <i class="fa fa-user"></i> Users
     </a>
-    <a href="<?php echo base_url('Profile') ?>" class="btn btn-app bg-teal">
-      <!-- <span class="badge bg-teal">67</span> -->
+    <!-- <a href="<?php echo base_url('Profile') ?>" class="btn btn-app bg-teal">
+      <span class="badge bg-teal">67</span>
       <i class="fa fa-inbox"></i> Orders
-    </a>
+    </a> -->
     <!-- <a class="btn btn-app">
       <span class="badge bg-aqua">12</span>
       <i class="fa fa-envelope"></i> Inbox

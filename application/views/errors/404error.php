@@ -148,7 +148,7 @@
 				<h1>Oops!</h1>
 				<h2>404 - The Page can't be found</h2>
 			</div>
-			<a href="<?php echo base_url('Home') ?>">Go TO Homepage</a>
+			<a href="<?php echo base_url() ?>">Go TO Homepage</a>
 		</div>
 	</div>
 

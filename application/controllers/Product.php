@@ -13,21 +13,20 @@ class Product extends AUTH_Controller
 	{
 		$data['userdata'] 	= $this->userdata;
 		$data['dataProduct'] = $this->M_product->select_all();
-		
+
 		$data['page'] 		= "product";
 		$data['judul'] 		= "Data Product";
 		$data['deskripsi'] 	= "Manage Data Product";
-		
+
 		// $data['modal_tambah_posisi'] = show_my_modal('modals/modal_tambah_posisi', 'tambah-posisi', $data);
-		
-		$this->template->views('product/home', $data);
+
+		$this->templatej->views('product/home', $data);
 	}
-	
+
 	public function tampil()
 	{
 		$data['dataProduct'] = $this->M_product->select_all();
 		$this->load->view('product/list_data', $data);
-	
 	}
 
 	public function prosesTambah()

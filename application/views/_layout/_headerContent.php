@@ -3,7 +3,6 @@
 	if ($judul != "Beranda") {
 		# code...
 	} else {
-
 		# code...
 	?>
 		<h1>
@@ -28,7 +27,6 @@
 
 	<?php
 	} else {
-		# code...
 	}
 
 

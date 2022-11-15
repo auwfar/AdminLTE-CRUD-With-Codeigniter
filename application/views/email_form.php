@@ -9,6 +9,7 @@
 <body>
     <?php
     echo $this->session->flashdata('email_sent');
+    echo $this->session->flashdata('message');
     echo form_open('/Email_controller/send_mail');
     ?>
     <select name="pilih" id="pilih">
@@ -24,4 +25,3 @@
 </body>
 
 </html>
-
