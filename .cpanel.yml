@@ -1,9 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/musx1236/public_html/my
+    - export DEPLOYPATH=/home/sidh9418/public_html/
     - /bin/cp -R application $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R assets_ $DEPLOYPATH
+    - /bin/cp -R assets_frontend $DEPLOYPATH
     - /bin/cp -R system $DEPLOYPATH
     - /bin/cp -R vendor $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH    
