@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-if ($_SERVER['SERVER_NAME']=='localhost') {   
+if ($_SERVER['SERVER_NAME'] == 'localhost') {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
@@ -100,9 +100,9 @@ if ($_SERVER['SERVER_NAME']=='localhost') {
 	$db['default'] = array(
 		'dsn'	=> '',
 		'hostname' => 'localhost',
-		'username' => 'musx1236_musaeri',
-		'password' => '{al[l{11~Jpv',
-		'database' => 'musx1236_VPS01NA',
+		'username' => 'sidh9418_vpsbsp',
+		'password' => 'XY5Zr4.leE9&',
+		'database' => 'sidh9418_vpsbsp',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
@@ -119,4 +119,3 @@ if ($_SERVER['SERVER_NAME']=='localhost') {
 		'save_queries' => TRUE
 	);
 }
-
