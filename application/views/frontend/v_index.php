@@ -102,8 +102,8 @@
                     <img class="w-100" src="<?php echo base_url(); ?>assets_frontend/img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Organic Vegetables</h3>
-                            <h1 class="display-1 text-white mb-md-4">Organic Vegetables For Healthy Life</h1>
+                            <h3 class="text-white">Ayo Ke Bank Sampah Pintar</h3>
+                            <h1 class="display-1 text-white mb-md-4">Ubah Sampah mu Menjadi Emas</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
                         </div>
@@ -113,8 +113,8 @@
                     <img class="w-100" src="<?php echo base_url(); ?>assets_frontend/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Organic Fruits</h3>
-                            <h1 class="display-1 text-white mb-md-4">Organic Fruits For Better Health</h1>
+                            <h3 class="text-white">Eman Antam</h3>
+                            <h1 class="display-1 text-white mb-md-4">Tabungan Masa Depan Lebih Baik</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
                         </div>
@@ -140,7 +140,7 @@
             <div class="row gx-0">
                 <div class="col-md-6">
                     <div class="bg-primary bg-vegetable d-flex flex-column justify-content-center p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Organic Vegetables</h3>
+                        <h3 class="text-white mb-3">Daftar Sebagai Nasabah</h3>
                         <p class="text-white">Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo dolor, amet
                             lorem diam no duo sed dolore amet diam</p>
                         <a class="text-white fw-bold" href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
@@ -148,7 +148,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="bg-secondary bg-fruit d-flex flex-column justify-content-center p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Organic Fruits</h3>
+                        <h3 class="text-white mb-3">Daftar Sebagai Unit</h3>
                         <p class="text-white">Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo dolor, amet
                             lorem diam no duo sed dolore amet diam</p>
                         <a class="text-white fw-bold" href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
@@ -171,7 +171,7 @@
                 </div>
                 <div class="col-lg-6 pb-5">
                     <div class="mb-3 pb-2">
-                        <h6 class="text-primary text-uppercase">About Us</h6>
+                        <h6 class="text-primary text-uppercase">Tentam Kami</h6>
                         <h1 class="display-5">We Produce Organic Food For Your Family</h1>
                     </div>
                     <p class="mb-4">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita
@@ -181,14 +181,12 @@
                         <div class="col-sm-6">
                             <i class="fa fa-seedling display-1 text-secondary"></i>
                             <h4>100% Organic</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna
-                                dolor vero</p>
+                            <p class="mb-0">Lingkungan Bersih dan Aman</p>
                         </div>
                         <div class="col-sm-6">
                             <i class="fa fa-award display-1 text-secondary"></i>
                             <h4>Award Winning</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna
-                                dolor vero</p>
+                            <p class="mb-0">Menjadi Juara dalam Penghijauan Lingkungan</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +206,7 @@
                             <i class="fa fa-star fs-4 text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white">Our Experience</h5>
+                            <h5 class="text-white">Bank Sampah Unit</h5>
                             <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
                         </div>
                     </div>
@@ -219,7 +217,7 @@
                             <i class="fa fa-users fs-4 text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white">Farm Specialist</h5>
+                            <h5 class="text-white">Nasabah Terdaftar</h5>
                             <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
                         </div>
                     </div>
@@ -230,7 +228,7 @@
                             <i class="fa fa-check fs-4 text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white">Complete Project</h5>
+                            <h5 class="text-white">Sampah Terkelola (Kg)</h5>
                             <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
                         </div>
                     </div>
@@ -594,36 +592,49 @@
                 <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                            <h4 class="text-white mb-4">Get In Touch</h4>
+                            <h4 class="text-white mb-4">Kantor Pusat Bank Sampah</h4>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-white me-2"></i>
-                                <p class="text-white mb-0">123 Street, New York, USA</p>
+                                <p class="text-white mb-0">Jl Raya Jatinegara Kau Jakarta Timur</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-white me-2"></i>
-                                <p class="text-white mb-0">info@example.com</p>
+                                <p class="text-white mb-0">info@bspid.id</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-white me-2"></i>
-                                <p class="text-white mb-0">+012 345 67890</p>
+                                <p class="text-white mb-0">+0812 9090 8320 CS 01</p>
+                            </div>
+
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-white me-2"></i>
+                                <p class="text-white mb-0">+0812 9090 8320 CS 02</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-white me-2"></i>
+                                <p class="text-white mb-0">+0812 9090 8320 CS 03</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-white me-2"></i>
+                                <p class="text-white mb-0">+0812 9090 8320 CS 04</p>
                             </div>
                             <div class="d-flex mt-4">
-                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-secondary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://id-id.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <h4 class="text-white mb-4">Bank Sampah Pintar</h4>
                             <div class="d-flex flex-column justify-content-start">
                                 <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
-                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
-                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Our
-                                    Services</a>
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Tentang Kami</a>
+                                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Layanan</a>
                                 <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Meet The Team</a>
                                 <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Latest Blog</a>
-                                <a class="text-white" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Contact
+                                <a class="text-white" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Kontak
                                     Us</a>
                             </div>
                         </div>
@@ -660,8 +671,8 @@
     </div>
     <div class="container-fluid bg-dark text-white py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="#">Your Site Name</a>. All Rights Reserved.
-                Designed by <a class="text-secondary fw-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+            <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="#">BSPID</a>. All Rights Reserved.
+                Designed by <a class="text-secondary fw-bold" href="https://miga.co.id">IT</a></p>
         </div>
     </div>
     <!-- Footer End -->
