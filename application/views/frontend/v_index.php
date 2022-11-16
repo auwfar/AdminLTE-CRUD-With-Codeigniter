@@ -336,7 +336,7 @@
                 <div class="col-lg-6">
                     <div class="d-block bg-white h-70 text-center p-5 pb-lg-0">
                         <p>Jadikan Sampah anda menjadi Emas Bantangan Hanya di Bank Sampah Pintar</p>
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets_frontend/img/feature.png" alt="">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets_frontend/img/feature1.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-3">
