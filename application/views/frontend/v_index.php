@@ -102,7 +102,7 @@
                     <img class="w-100" src="<?php echo base_url(); ?>assets_frontend/img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Ayo Ke Bank Sampah Pintar</h3>
+                            <h3 class="text-white">c</h3>
                             <h1 class="display-1 text-white mb-md-4">Ubah Sampah mu Menjadi Emas</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
@@ -113,7 +113,7 @@
                     <img class="w-100" src="<?php echo base_url(); ?>assets_frontend/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Eman Antam</h3>
+                            <h3 class="text-white">E</h3>
                             <h1 class="display-1 text-white mb-md-4">Tabungan Masa Depan Lebih Baik</h1>
                             <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
