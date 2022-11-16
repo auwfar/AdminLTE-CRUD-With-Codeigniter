@@ -77,13 +77,13 @@
                 <a href="service.html" class="nav-item nav-link">Layanan</a>
                 <a href="product.html" class="nav-item nav-link">Produk</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Halaman Lain</a>
                     <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="blog.html" class="dropdown-item">Karir</a>
+                        <a href="detail.html" class="dropdown-item">Layanan Bank</a>
+                        <!-- <a href="feature.html" class="dropdown-item">Features</a>
                         <a href="team.html" class="dropdown-item">The Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Kontak</a>
@@ -102,10 +102,10 @@
                     <img class="w-100" src="<?php echo base_url(); ?>assets_frontend/img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">c</h3>
-                            <h1 class="display-1 text-white mb-md-4">Ubah Sampah mu Menjadi Emas</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
+                            <h3 class="text-white">#</h3>
+                            <h1 class="display-1 text-white mb-md-4">#</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Login Unit</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5">Login Personal</a>
                         </div>
                     </div>
                 </div>
@@ -113,10 +113,10 @@
                     <img class="w-100" src="<?php echo base_url(); ?>assets_frontend/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                         <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">E</h3>
-                            <h1 class="display-1 text-white mb-md-4">Tabungan Masa Depan Lebih Baik</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Explore</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5">Contact</a>
+                            <h3 class="text-white">#</h3>
+                            <h1 class="display-1 text-white mb-md-4">#</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Login Unit</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5">Login Personal</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,8 @@
                         <h3 class="text-white mb-3">Daftar Sebagai Nasabah</h3>
                         <p class="text-white">Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo dolor, amet
                             lorem diam no duo sed dolore amet diam</p>
-                        <a class="text-white fw-bold" href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        <!-- <a class="text-white fw-bold" href="">Read More<i class="bi bi-arrow-right ms-2"></i></a> -->
+                        <a href="" class="btn btn-secondary py-md-3 px-md-5">Daftar Personal</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -151,7 +152,8 @@
                         <h3 class="text-white mb-3">Daftar Sebagai Unit</h3>
                         <p class="text-white">Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo dolor, amet
                             lorem diam no duo sed dolore amet diam</p>
-                        <a class="text-white fw-bold" href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        <!-- <a class="text-white fw-bold" href="">Read More<i class="bi bi-arrow-right ms-2"></i></a> -->
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Daftar Unit </a>
                     </div>
                 </div>
             </div>
@@ -199,7 +201,7 @@
     <div class="container-fluid bg-primary facts py-5 mb-5">
         <div class="container py-5">
             <div class="row gx-5 gy-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="d-flex">
                         <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-star fs-4 text-white"></i>
@@ -210,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="d-flex">
                         <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-users fs-4 text-white"></i>
@@ -221,28 +223,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="d-flex">
                         <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-check fs-4 text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white">Sampah Terkelola (Kg)</h5>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h5 class="text-white">Sampah Terkelolah (Kg)</h5>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345678</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="d-flex">
                         <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-mug-hot fs-4 text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white">Happy Clients</h5>
+                            <h5 class="text-white">Titik Edukasi     </h5>
                             <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -312,7 +314,7 @@
         <div class="container py-5 pb-lg-0">
             <div class="mx-auto text-center mb-3 pb-2" style="max-width: 500px;">
                 <h6 class="text-uppercase text-secondary">Features</h6>
-                <h1 class="display-5 text-white">Why Choose Us!!!</h1>
+                <h1 class="display-5 text-white">Mengapa Memilih Kami!!!</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-3">
@@ -321,22 +323,19 @@
                             <i class="fa fa-seedling fs-4 text-white"></i>
                         </div>
                         <h4 class="text-white">100% Organic</h4>
-                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                        <p class="mb-0">Salah Satu Bank Sampah yang terbaik di Jakarta</p>
                     </div>
                     <div class="text-white">
                         <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-award fs-4 text-white"></i>
                         </div>
                         <h4 class="text-white">Award Winning</h4>
-                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                        <p class="mb-0">Menjuarai Ibu kota Awards tahun 2021</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="d-block bg-white h-100 text-center p-5 pb-lg-0">
-                        <p>At et justo elitr amet sea at. Magna et sit vero at ipsum sit et dolores rebum. Magna sea eos
-                            sit dolor, ipsum amet no tempor ipsum eirmod lorem eirmod diam tempor dolor eos diam et et
-                            diam dolor ea. Clita est rebum amet dolore sit. Dolor stet dolor duo clita, vero dolor ipsum
-                            amet dolore magna lorem erat stet sed vero dolor</p>
+                        <p>Jadikan Sampah anda menjadi Emas Bantangan Hanya di Bank Sampah Pintar</p>
                         <img class="img-fluid" src="<?php echo base_url(); ?>assets_frontend/img/feature.png" alt="">
                     </div>
                 </div>
@@ -345,15 +344,15 @@
                         <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-tractor fs-4 text-white"></i>
                         </div>
-                        <h4 class="text-white">Modern Farming</h4>
-                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                        <h4 class="text-white">Antar Jemput</h4>
+                        <p class="mb-0">Kami Siap menjemput sampah anda di tempat</p>
                     </div>
                     <div class="text-white">
                         <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-phone-alt fs-4 text-white"></i>
                         </div>
                         <h4 class="text-white">24/7 Support</h4>
-                        <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita</p>
+                        <p class="mb-0">Siap membantu memlalui chat whatsapp</p>
                     </div>
                 </div>
             </div>
@@ -366,15 +365,46 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="mx-auto text-center mb-5" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase">Products</h6>
-                <h1 class="display-5">Our Fresh & Organic Products</h1>
+                <h6 class="text-primary text-uppercase">Produk</h6>
+                <h1 class="display-5">Sampah dan Harga</h1>
             </div>
             <div class="owl-carousel product-carousel px-5">
+                <?php
+                $x = 1;
+                while ($x <= 50) {
+                ?>
+                    <div class="pb-5">
+                        <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                            <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/produk/botolplastik-01.png" alt="">
+                            <h6 class="mb-3">Botol Bersih</h6>
+                            <h5 class="text-primary mb-0">Rp 1.000 <?php echo $x; ?></h5>
+                            <div class="btn-action d-flex justify-content-center">
+                                <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                                <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                    $x++;
+                } ?>
+
+                <!-- looping -->
+                <!-- <div class="pb-5">
+                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/product-2.png" alt="">
+                        <h6 class="mb-3">Organic Vegetable</h6>
+                        <h5 class="text-primary mb-0">Rp 1.000</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
+                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="pb-5">
                     <div class="product-item position-relative bg-white d-flex flex-column text-center">
                         <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/product-1.png" alt="">
                         <h6 class="mb-3">Organic Vegetable</h6>
-                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <h5 class="text-primary mb-0">Rp 1.000</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
                             <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
@@ -385,7 +415,7 @@
                     <div class="product-item position-relative bg-white d-flex flex-column text-center">
                         <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/product-2.png" alt="">
                         <h6 class="mb-3">Organic Vegetable</h6>
-                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <h5 class="text-primary mb-0">Rp 1.000</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
                             <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
@@ -396,35 +426,14 @@
                     <div class="product-item position-relative bg-white d-flex flex-column text-center">
                         <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/product-1.png" alt="">
                         <h6 class="mb-3">Organic Vegetable</h6>
-                        <h5 class="text-primary mb-0">$19.00</h5>
+                        <h5 class="text-primary mb-0">Rp 1.000</h5>
                         <div class="btn-action d-flex justify-content-center">
                             <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
                             <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/product-2.png" alt="">
-                        <h6 class="mb-3">Organic Vegetable</h6>
-                        <h5 class="text-primary mb-0">$19.00</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-5">
-                    <div class="product-item position-relative bg-white d-flex flex-column text-center">
-                        <img class="img-fluid mb-4" src="<?php echo base_url(); ?>assets_frontend/img/product-1.png" alt="">
-                        <h6 class="mb-3">Organic Vegetable</h6>
-                        <h5 class="text-primary mb-0">$19.00</h5>
-                        <div class="btn-action d-flex justify-content-center">
-                            <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
-                            <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
+                <!-- looping -->
             </div>
         </div>
     </div>
@@ -474,7 +483,7 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
-                    <div class="row g-0">
+                    <!-- <div class="row g-0">
                         <div class="col-10">
                             <div class="position-relative">
                                 <img class="img-fluid w-100" src="<?php echo base_url(); ?>assets_frontend/img/team-1.jpg" alt="">
@@ -492,7 +501,7 @@
                                 <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-instagram text-secondary"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="row g-0">
@@ -516,7 +525,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="row g-0">
+                    <!-- <div class="row g-0">
                         <div class="col-10">
                             <div class="position-relative">
                                 <img class="img-fluid w-100" src="<?php echo base_url(); ?>assets_frontend/img/team-3.jpg" alt="">
@@ -534,7 +543,7 @@
                                 <a class="btn btn-square rounded-circle bg-white" href="#"><i class="fab fa-instagram text-secondary"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
