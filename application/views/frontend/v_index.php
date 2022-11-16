@@ -50,10 +50,10 @@
             </div>
             <div class="col-lg-3">
                 <div class="d-flex align-items-center justify-content-end">
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://api.whatsapp.com/send?phone=6281290908320"><i class="fab fa-whatsapp"></i></a>
                     <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.linkedin.com/in/miga-informatika-71b407257/"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -172,11 +172,10 @@
                 <div class="col-lg-6 pb-5">
                     <div class="mb-3 pb-2">
                         <h6 class="text-primary text-uppercase">Tentam Kami</h6>
-                        <h1 class="display-5">We Produce Organic Food For Your Family</h1>
+                        <h1 class="display-5">Bank SamPah Pintar</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita
-                        erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor
-                        eirmod magna dolore erat amet magna</p>
+                    <p class="mb-4">Ajang penghargaan untuk wanita2 tangguh pelopor pergerakan perubahan untuk menjadi lebih baik,
+                        tingkat Provinsi DKI Jakarta Prestasi yang diangkat Program NYIMAS (Pengelolaan sampah terintegrasi daring)</p>
                     <div class="row gx-5 gy-4">
                         <div class="col-sm-6">
                             <i class="fa fa-seedling display-1 text-secondary"></i>
@@ -186,7 +185,7 @@
                         <div class="col-sm-6">
                             <i class="fa fa-award display-1 text-secondary"></i>
                             <h4>Award Winning</h4>
-                            <p class="mb-0">Menjadi Juara dalam Penghijauan Lingkungan</p>
+                            <p class="mb-0">ibukota Awards tahun 2021</p>
                         </div>
                     </div>
                 </div>
@@ -257,10 +256,9 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="mb-3">
                         <h6 class="text-primary text-uppercase">Services</h6>
-                        <h1 class="display-5">Organic Farm Services</h1>
+                        <h1 class="display-5">Layanan Bank Sampah Pintar</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita
-                        erat ipsum et lorem et sit sed stet labore</p>
+                    <p class="mb-4">Apabila ingin Tahu Terkait Bank Sampah Pintar Bisa Chat melalui whatsapp</p>
                     <a href="" class="btn btn-primary py-md-3 px-md-5">Contact Us</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -619,10 +617,10 @@
                                 <p class="text-white mb-0">+0812 9090 8320 CS 04</p>
                             </div>
                             <div class="d-flex mt-4">
-                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://api.whatsapp.com/send?phone=6281290908320"><i class="fab fa-whatsapp"></i></a>
                                 <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://id-id.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://www.linkedin.com/in/miga-informatika-71b407257/"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-secondary btn-square rounded-circle" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
