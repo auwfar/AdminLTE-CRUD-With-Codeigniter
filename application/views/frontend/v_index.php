@@ -171,8 +171,8 @@
                 </div>
                 <div class="col-lg-6 pb-5">
                     <div class="mb-3 pb-2">
-                        <h6 class="text-primary text-uppercase">Tentam Kami</h6>
-                        <h1 class="display-5">Bank SamPah Pintar</h1>
+                        <h6 class="text-primary text-uppercase">Tentang Kami</h6>
+                        <h1 class="display-5">Bank Sampah Pintar</h1>
                     </div>
                     <p class="mb-4">Ajang penghargaan untuk wanita2 tangguh pelopor pergerakan perubahan untuk menjadi lebih baik,
                         tingkat Provinsi DKI Jakarta Prestasi yang diangkat Program NYIMAS (Pengelolaan sampah terintegrasi daring)</p>
@@ -470,7 +470,7 @@
         <div class="container">
             <div class="mx-auto text-center mb-5" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase">The Team</h6>
-                <h1 class="display-5">We Are Professional Organic Farmers</h1>
+                <h1 class="display-5">CSR ANTAM Logam Mulia</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
@@ -479,8 +479,8 @@
                             <div class="position-relative">
                                 <img class="img-fluid w-100" src="<?php echo base_url(); ?>assets_frontend/img/team-1.jpg" alt="">
                                 <div class="position-absolute start-0 bottom-0 w-100 py-3 px-4" style="background: rgba(52, 173, 84, .85);">
-                                    <h4 class="text-white">Farmer Name</h4>
-                                    <span class="text-white">Designation</span>
+                                    <h4 class="text-white"></h4>
+                                    <span class="text-white">CSR</span>
                                 </div>
                             </div>
                         </div>
@@ -500,8 +500,8 @@
                             <div class="position-relative">
                                 <img class="img-fluid w-100" src="<?php echo base_url(); ?>assets_frontend/img/team-2.jpg" alt="">
                                 <div class="position-absolute start-0 bottom-0 w-100 py-3 px-4" style="background: rgba(52, 173, 84, .85);">
-                                    <h4 class="text-white">Farmer Name</h4>
-                                    <span class="text-white">Designation</span>
+                                    <h4 class="text-white"></h4>
+                                    <span class="text-white">CSR</span>
                                 </div>
                             </div>
                         </div>
@@ -521,8 +521,8 @@
                             <div class="position-relative">
                                 <img class="img-fluid w-100" src="<?php echo base_url(); ?>assets_frontend/img/team-3.jpg" alt="">
                                 <div class="position-absolute start-0 bottom-0 w-100 py-3 px-4" style="background: rgba(52, 173, 84, .85);">
-                                    <h4 class="text-white">Farmer Name</h4>
-                                    <span class="text-white">Designation</span>
+                                    <h4 class="text-white"></h4>
+                                    <span class="text-white">CSR</span>
                                 </div>
                             </div>
                         </div>
