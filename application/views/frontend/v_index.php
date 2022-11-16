@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="d-block bg-white h-100 text-center p-5 pb-lg-0">
+                    <div class="d-block bg-white h-70 text-center p-5 pb-lg-0">
                         <p>Jadikan Sampah anda menjadi Emas Bantangan Hanya di Bank Sampah Pintar</p>
                         <img class="img-fluid" src="<?php echo base_url(); ?>assets_frontend/img/feature.png" alt="">
                     </div>
@@ -366,7 +366,7 @@
         <div class="container">
             <div class="mx-auto text-center mb-5" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase">Produk</h6>
-                <h1 class="display-5">Sampah dan Harga</h1>
+                <h1 class="display-5">Harga Sampah</h1>
             </div>
             <div class="owl-carousel product-carousel px-5">
                 <?php
@@ -479,7 +479,7 @@
         <div class="container">
             <div class="mx-auto text-center mb-5" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase">The Team</h6>
-                <h1 class="display-5">CSR ANTAM Logam Mulia</h1>
+                <h1 class="display-5">CSR ANTAM Logammulia</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
