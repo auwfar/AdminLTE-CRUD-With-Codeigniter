@@ -41,10 +41,11 @@
             </div>
             <div class="col-lg-6">
                 <div class="d-flex align-items-center justify-content-center">
-                    <a href="index.html" class="navbar-brand ms-lg-5">
+                    <img height="120" src="<?php echo base_url(); ?>assets_frontend/img/Banksampahpintar.png" alt="">
+                    <a href="index.html" class="navbar-brand ms-lg-3">
                         <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Bank Sampah</span> Pintar
                         </h1>
-                        <h3>Digitalikasi Sampah </h3>
+                        <h3>Digitalisasi Sampah </h3>
                     </a>
                 </div>
             </div>
@@ -65,7 +66,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex d-lg-none">
-            <h1 class="m-0 display-4 text-secondary"><span class="text-white">BS</span>P</h1>
+            <img height="50" src="<?php echo base_url(); ?>assets_frontend/img/Banksampahpintar.png" alt="">
+            <h3 class="m-0 display-4 text-secondary"><span class="text-white">BS</span>P</h3>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
