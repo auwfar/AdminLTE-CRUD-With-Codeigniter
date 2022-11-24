@@ -9,7 +9,6 @@ class Email_controller extends CI_Controller
   public function __construct()
   {
     parent::__construct();
-
     require APPPATH . 'libraries/phpmailer/src/Exception.php';
     require APPPATH . 'libraries/phpmailer/src/PHPMailer.php';
     require APPPATH . 'libraries/phpmailer/src/SMTP.php';
@@ -53,6 +52,7 @@ class Email_controller extends CI_Controller
     $mail->Password = 'gDSg8oHGOC3iB'; // password email
     $mail->SMTPSecure = 'ssl';
     $mail->Port     = 465;
+
     $mail->setFrom('noreply@miga.co.id', $from); // user email
     $mail->addReplyTo('', 'noreply'); //user email
     $mail->addAddress($this->input->post('email')); //email tujuan pengiriman email

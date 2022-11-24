@@ -76,10 +76,10 @@ $query_builder = TRUE;
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
 	$db['default'] = array(
 		'dsn'	=> '',
-		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'database' => 'vpsbsp',
+		'hostname' => HOSTNAME,
+		'username' => USERNAME,
+		'password' => PASSWORD,
+		'database' => DATABASE,
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
@@ -99,10 +99,10 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 
 	$db['default'] = array(
 		'dsn'	=> '',
-		'hostname' => 'localhost',
-		'username' => 'sidh9418_vpsbsp',
-		'password' => 'XY5Zr4.leE9&',
-		'database' => 'sidh9418_vpsbsp',
+		'hostname' => HOSTNAME,
+		'username' => USERNAME,
+		'password' => PASSWORD,
+		'database' => DATABASE,
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,

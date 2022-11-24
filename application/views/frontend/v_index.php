@@ -9,7 +9,7 @@
     <meta content="Digitalikasi" name="description">
 
     <!-- Favicon -->
-    <link href="<?php echo base_url(); ?>assets_frontend/img/favicon.ico" rel="icon">
+    <link href="<?php echo base_url(); ?>assets_frontend/img/icon_bsp.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,7 +41,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="d-flex align-items-center justify-content-center">
-                    <img height="120" src="<?php echo base_url(); ?>assets_frontend/img/Banksampahpintar.png" alt="">
+                    <img height="100" src="<?php echo base_url(); ?>assets_frontend/img/LOGO.png" alt="">
                     <a href="index.html" class="navbar-brand ms-lg-3">
                         <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Bank Sampah</span> Pintar
                         </h1>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Kontak</a>
-                <a href="contact.html" class="nav-item nav-link">Login</a>
+                <a href="<?php echo base_url('auth')?>" class="nav-item nav-link">Login</a>
             </div>
         </div>
     </nav>

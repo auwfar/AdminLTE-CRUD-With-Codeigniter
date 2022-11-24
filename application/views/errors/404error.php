@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>404 HTML Template by Colorlib</title>
+	<title>BSPID 404</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
@@ -146,7 +146,7 @@
 		<div class="notfound">
 			<div class="notfound-404">
 				<h1>Oops!</h1>
-				<h2>404 - The Page can't be found</h2>
+				<h2>404 -tidak dapat ditemukan</h2>
 			</div>
 			<a href="<?php echo base_url() ?>">Go TO Homepage</a>
 		</div>
