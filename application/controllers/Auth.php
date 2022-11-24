@@ -80,14 +80,14 @@ class Auth extends CI_Controller
 	{
 		//select * FROM userlogin Where email='emailuser' kemudian ambil data Password untuk dikirim ke email user
 
-		$SQL = "SELECT * FROM tbluserlogin";
-		$query = $this->db->query($SQL);
-		$row = $query->row();
+		// $SQL = "SELECT * FROM tbluserlogin";
+		// $query = $this->db->query($SQL);
+		// $row = $query->row();
 
-		echo $row->field_nama;
+		// echo $row->field_nama;
 
-		// var_dump($row['field_nama']);
-		die();
+		// // var_dump($row['field_nama']);
+		// die();
 
 		$nama = 'Musaeri';
 		$tokenn = md5('musaeri1807@gmail.com');
